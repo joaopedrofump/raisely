@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/raisely/static/css/main.5f361e03.chunk.css",
-    "main.js": "/raisely/static/js/main.4495924a.chunk.js",
-    "main.js.map": "/raisely/static/js/main.4495924a.chunk.js.map",
+    "main.js": "/raisely/static/js/main.2525e929.chunk.js",
+    "main.js.map": "/raisely/static/js/main.2525e929.chunk.js.map",
     "runtime-main.js": "/raisely/static/js/runtime-main.22ff009a.js",
     "runtime-main.js.map": "/raisely/static/js/runtime-main.22ff009a.js.map",
     "static/js/2.af8c5e3c.chunk.js": "/raisely/static/js/2.af8c5e3c.chunk.js",
     "static/js/2.af8c5e3c.chunk.js.map": "/raisely/static/js/2.af8c5e3c.chunk.js.map",
     "index.html": "/raisely/index.html",
-    "precache-manifest.7551fd513c5d4d009005194468a7c823.js": "/raisely/precache-manifest.7551fd513c5d4d009005194468a7c823.js",
+    "precache-manifest.0288a6d8b76462bf1d4af52dc61b2a80.js": "/raisely/precache-manifest.0288a6d8b76462bf1d4af52dc61b2a80.js",
     "service-worker.js": "/raisely/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/raisely/static/css/main.5f361e03.chunk.css.map",
     "static/js/2.af8c5e3c.chunk.js.LICENSE.txt": "/raisely/static/js/2.af8c5e3c.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.22ff009a.js",
     "static/js/2.af8c5e3c.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.4495924a.chunk.js"
+    "static/js/main.2525e929.chunk.js"
   ]
 }
