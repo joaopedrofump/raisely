@@ -227,6 +227,7 @@ const Signup = () => {
                                                   <InputAdornment className={classes.eye} position="start">
                                                         <Box onTouchStart={showPassword(setPasswordType)} 
                                                             onTouchCancel={hidePassword(setPasswordType)} 
+                                                            onTouchEnd={hidePassword(setPasswordType)} 
                                                             onMouseDown={showPassword(setPasswordType)}
                                                             onMouseUp={hidePassword(setPasswordType)} 
                                                         >
@@ -256,6 +257,7 @@ const Signup = () => {
                                                   <InputAdornment className={classes.eye} position="start">
                                                         <Box
                                                             onTouchStart={showPassword(setConfirmPasswordType)} 
+                                                            onTouchEnd={hidePassword(setConfirmPasswordType)}
                                                             onTouchCancel={hidePassword(setConfirmPasswordType)}
                                                             onMouseDown={showPassword(setConfirmPasswordType)}
                                                              onMouseUp={hidePassword(setConfirmPasswordType)} 
