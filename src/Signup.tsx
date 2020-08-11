@@ -93,7 +93,6 @@ const Signup = () => {
     const [done, setDone] = useState<boolean>(false)
     
     const [message, setMessage] = useState<string>('')
-    // const [done,setLoading] = useState<boolean>(false)
 
     const [passwordType,setPasswordType] = useState<string>('password')
     const [confirmPasswordType,setConfirmPasswordType] = useState<string>('password')
@@ -102,7 +101,7 @@ const Signup = () => {
 
         const nameValidation = /^[a-zA-Z\xC0-\uFFFF]+\s+[a-zA-Z\xC0-\uFFFF]+\s*$/.test(name)
         const emailValidation = /^[a-zA-Z]+@[a-zA-Z]+\.[a-z]{2,}$/.test(email)
-        const passwordValidation = /^(?=.*[!-\/:-@].*).{6,}$/.test(password)
+        const passwordValidation = /^(?=.*[!-/:-@].*).{6,}$/.test(password)
         const samePasswordValidation = password === confirmPassword
 
         setValidName(nameValidation)
