@@ -103,7 +103,7 @@ const Signup = () => {
     const validateFields = () => {
 
         const nameValidation = /^[a-zA-Z\xC0-\uFFFF]+\s+[a-zA-Z\xC0-\uFFFF]+\s*$/.test(name)
-        const emailValidation = /^[a-zA-Z]+@[a-zA-Z]+\.[a-z]{2,}$/.test(email)
+        const emailValidation = /^[a-zA-Z][a-zA-Z1-9]+@[a-zA-Z]+\.[a-z]{2,}$/.test(email)
         const passwordValidation = /^(?=.*[!-/:-@].*).{6,}$/.test(password)
         const samePasswordValidation = password === confirmPassword
 
