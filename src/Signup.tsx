@@ -73,10 +73,10 @@ const Signup = () => {
 
     const classes = useStyles()
 
-    const [name, setName] = useState<string>('João Pinheiro')
-    const [email, setEmail] = useState<string>('joaopedrofump@gmail.com')
-    const [password, setPassword] = useState<string>('12345@1')
-    const [confirmPassword, setConfirmPassword] = useState<string>('12345@1')
+    const [name, setName] = useState<string>('')
+    const [email, setEmail] = useState<string>('')
+    const [password, setPassword] = useState<string>('')
+    const [confirmPassword, setConfirmPassword] = useState<string>('')
 
 
     const [validName, setValidName] = useState<boolean>(true)
