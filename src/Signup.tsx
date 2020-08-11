@@ -141,9 +141,7 @@ const Signup = () => {
                             console.error('fetch error')
                             setMessage(genericError)
                         }
-                        else {
-                            console.log(err)
-                            
+                        else {                            
                             setMessage(err.errors[0].message ?? genericError)
                         }
                         setError(true)

@@ -7,18 +7,14 @@ export const fetchRequest = (payload: any, url: string) : Promise<any> => {
         try {
             const result = await fetch(url,{headers:{'Content-Type':'application/json'}, method: 'post', body: JSON.stringify(payload)})
             const parsed = await result.json()
-            if(result.ok) {
-                console.log(parsed)
+            if(result.ok) 
                 res(parsed)
-            }
-            else  {
-                console.error('erro', parsed)
+            
+            else  
                 rej(parsed)
-            }
         }
 
         catch(err) {
-            console.log('fetch error')
             rej('fetch error')
         }
     })
