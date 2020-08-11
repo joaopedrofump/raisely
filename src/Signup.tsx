@@ -87,6 +87,9 @@ const Signup = () => {
     const setter = (propertySetter: Function) => (event: any) => propertySetter(event.target.value)
     const resetFieldValidation = (validationSetter: Function) => () => validationSetter(true)
 
+    const showPassword = (setter: Function) => () => setter('text')
+    const hidePassword = (setter: Function) => () => setter('password')
+
     const [loading, setLoading] = useState<boolean>(false)
 
     const [error, setError] = useState<boolean>(false)
@@ -222,7 +225,11 @@ const Signup = () => {
                                             InputProps={{
                                                 endAdornment: (
                                                   <InputAdornment className={classes.eye} position="start">
-                                                        <Box onMouseUp={() => setPasswordType('password')} onMouseDown={() => setPasswordType('text')}>
+                                                        <Box onTouchStart={showPassword(setPasswordType)} 
+                                                            onTouchCancel={hidePassword(setPasswordType)} 
+                                                            onMouseDown={showPassword(setPasswordType)}
+                                                            onMouseUp={hidePassword(setPasswordType)} 
+                                                        >
                                                             <RemoveRedEye />
                                                         </Box>
                                                   </InputAdornment>
@@ -247,7 +254,12 @@ const Signup = () => {
                                             InputProps={{
                                                 endAdornment: (
                                                   <InputAdornment className={classes.eye} position="start">
-                                                        <Box onMouseUp={() => setConfirmPasswordType('password')} onMouseDown={() => setConfirmPasswordType('text')}>
+                                                        <Box
+                                                            onTouchStart={showPassword(setConfirmPasswordType)} 
+                                                            onTouchCancel={hidePassword(setConfirmPasswordType)}
+                                                            onMouseDown={showPassword(setConfirmPasswordType)}
+                                                             onMouseUp={hidePassword(setConfirmPasswordType)} 
+                                                        >
                                                             <RemoveRedEye />
                                                         </Box>
                                                   </InputAdornment>
