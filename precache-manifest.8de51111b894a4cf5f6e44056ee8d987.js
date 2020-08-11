@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "65ade83ff0959d1ec5935763d1c2c745",
+    "revision": "c935651ffd99b1a8f7a03302212ab522",
     "url": "/raisely/index.html"
   },
   {
-    "revision": "6e150a8c97c241b73609",
+    "revision": "aba8db4d5509ff68a3ec",
     "url": "/raisely/static/css/main.5f361e03.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/raisely/static/js/2.af8c5e3c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6e150a8c97c241b73609",
-    "url": "/raisely/static/js/main.7d927161.chunk.js"
+    "revision": "aba8db4d5509ff68a3ec",
+    "url": "/raisely/static/js/main.55069d17.chunk.js"
   },
   {
     "revision": "ca9b96a3969ceb777f39",
