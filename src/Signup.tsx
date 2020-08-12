@@ -230,6 +230,7 @@ const Signup = () => {
                                                             onTouchEnd={hidePassword(setPasswordType)} 
                                                             onMouseDown={showPassword(setPasswordType)}
                                                             onMouseUp={hidePassword(setPasswordType)} 
+                                                            onMouseLeave={hidePassword(setPasswordType)} 
                                                         >
                                                             <RemoveRedEye />
                                                         </Box>
@@ -260,7 +261,8 @@ const Signup = () => {
                                                             onTouchEnd={hidePassword(setConfirmPasswordType)}
                                                             onTouchCancel={hidePassword(setConfirmPasswordType)}
                                                             onMouseDown={showPassword(setConfirmPasswordType)}
-                                                             onMouseUp={hidePassword(setConfirmPasswordType)} 
+                                                            onMouseUp={hidePassword(setConfirmPasswordType)} 
+                                                            onMouseLeave={hidePassword(setConfirmPasswordType)} 
                                                         >
                                                             <RemoveRedEye />
                                                         </Box>
