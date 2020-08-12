@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
         padding: 30,
         borderRadius: 10,
         margin: '50px 0',
-        boxShadow: '3px 3px 7px 7px black',
+        boxShadow: '3px 3px 1px 3px black',
     },
 
     submit: {
